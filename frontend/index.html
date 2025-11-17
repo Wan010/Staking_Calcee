@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Invoice Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Invoice Generator</h1>
+
+
+<section>
+<h2>Add Client</h2>
+<input id="clientName" placeholder="Name">
+<input id="clientEmail" placeholder="Email">
+<button onclick="addClient()">Add Client</button>
+</section>
+
+
+<section>
+<h2>Create Invoice</h2>
+<select id="clientSelect"></select>
+<input id="amount" type="number" placeholder="Amount">
+<select id="currency">
+<option>USD</option>
+<option>INR</option>
+<option>EUR</option>
+<option>GBP</option>
+<option>AED</option>
+</select>
+<input id="desc" placeholder="Description">
+<button onclick="addInvoice()">Create Invoice</button>
+</section>
+
+
+<section>
+<h2>All Invoices</h2>
+<div id="invoiceList"></div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
